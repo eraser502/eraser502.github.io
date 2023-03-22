@@ -37,30 +37,4 @@
       </section>
     </div>
   </body>
-  <script>
-    const main = document.querySelector("main");
-    const button = document.querySelector("button");
-
-    button.addEventListener("click", function () {
-      main.style.display = "block";
-      button.style.display = "none";
-    });
-  </script>
-  <script>
-    const text =
-      "안녕하세요, 멋쟁이사자처럼 11기 아기사자🦁\n김도훈의 자기소개페이지 입니다!!";
-
-    const typingElement = document.querySelector("#typing-text");
-
-    function typeWriter(text, i, typingElement) {
-      if (i < text.length) {
-        typingElement.innerHTML += text.charAt(i);
-        i++;
-        setTimeout(() => typeWriter(text, i, typingElement), 50); // 50ms 간격으로 출력
-      }
-    }
-
-    // 함수 실행
-    typeWriter(text, 0, typingElement);
-  </script>
 </html>
