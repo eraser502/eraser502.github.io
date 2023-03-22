@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  font-family: "KCC-Ganpan";
+}
+@font-face {
+  font-family: "KCC-Ganpan";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/KCC-Ganpan.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+header {
+  width: 100%;
+  background-color: #9f9f9f;
+  padding-top: 20px;
+}
+.mainContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.topNavbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background-color: #9f9f9f;
+  padding: 12px;
+  border-top: 2px solid #eaeaea;
+}
+.navButton {
+  color: black;
+  text-decoration: none;
+  padding: 4px 12px 4px 12px;
+  font-size: 2rem;
+  border-radius: 8px;
+  background-color: #eaeaea;
+}
+
+.navButton:hover {
+  background-color: #ffffff;
+}
+
+.mainContent {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#typing-text {
+  color: #000;
+  font-size: 2.5rem;
+  white-space: pre-line;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: wrap row;
+  margin: 20px;
+  gap: 40px;
+}
+.mainPhoto {
+  width: 200px;
+  border-radius: 12px;
+}
+.profilePhoto {
+  width: 240px;
+}
+.hobbyPhoto{
+  width: 240px;
+  border-radius: 20px;
+}
+
+.mainTitle {
+  text-decoration: none;
+  color: #eaeaea;
+  font-weight: 600;
+  font-size: 40px;
+  margin: 0;
+}
+.mainTitle:hover {
+  color: #fff;
+}
+
+section {
+  padding: 20px;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hobbyContent{
+  word-break: break-all;
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  padding: 8px;
+  
+  align-items: center;
+  flex-flow: wrap row;
+  border: 1px dotted #9f9f9f;
+  margin-bottom: 12px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}

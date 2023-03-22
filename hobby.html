@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dohun's Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a class="mainTitle" href="index.html">Dohun's Self-Introduction Page</a>
+      <div class="topNavbar">
+        <a href="profile.html" class="navButton"> Profile </a>
+        <a href="hobby.html" class="navButton">Hobby</a>
+        <a href="contact.html" class="navButton">Contact</a>
+      </div>
+    </header>
+    <div class="mainContainer">
+      <section>
+        <h2>Hobby</h2>
+        <div class="hobbyContent">
+          <img class="hobbyPhoto" src="./img/lol.jpeg" />
+
+          <P style="font-size: 1.5rem; text-align: center">
+            롤 하루에 한판은 꼭 할 정도로 좋아해요!! <br/> 
+            좋아하시는분 같이해요😆
+          </p>
+        </div>
+        <div class="hobbyContent">
+          <img class="hobbyPhoto" src="./img/musicIcon.png" />
+
+          <p style="font-size: 1.5rem; text-align: center">
+            노래는 듣는것도 좋아하고<br />노래방 가는것도 좋아해요!! <br />
+            장르는 발라드, 팝, 인디 상관없이 좋아한답니다
+          </p>
+        </div>
+        <div class="hobbyContent">
+          <img class="hobbyPhoto" src="./img/billiard.png" />
+
+          <p style="font-size: 1.5rem; text-align: center">
+            당구치는것도 좋아해요!!<br />
+            당구 좋아하시는분 언제든 연락주시면 달려갑니다😆
+          </p>
+        </div>
+      </section>
+    </div>
+  </body>
+  <script>
+    const main = document.querySelector("main");
+    const button = document.querySelector("button");
+
+    button.addEventListener("click", function () {
+      main.style.display = "block";
+      button.style.display = "none";
+    });
+  </script>
+  <script>
+    const text =
+      "안녕하세요, 멋쟁이사자처럼 11기 아기사자🦁\n김도훈의 자기소개페이지 입니다!!";
+
+    const typingElement = document.querySelector("#typing-text");
+
+    function typeWriter(text, i, typingElement) {
+      if (i < text.length) {
+        typingElement.innerHTML += text.charAt(i);
+        i++;
+        setTimeout(() => typeWriter(text, i, typingElement), 50); // 50ms 간격으로 출력
+      }
+    }
+
+    // 함수 실행
+    typeWriter(text, 0, typingElement);
+  </script>
+</html>
